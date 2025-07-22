@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 
 export default function SocialsPageFullscreenDynamic() {
+  const [isClient, setIsClient] = useState(false)
   const [layout, setLayout] = useState({
     objectFit: 'cover' as 'cover' | 'contain',
     scale: 1,
@@ -14,8 +15,16 @@ export default function SocialsPageFullscreenDynamic() {
     top: 0,
   })
 
+  // Ensure component only renders on client
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
+
   useEffect(() => {
     const calculateLayout = () => {
+      // Ensure we're in the browser before accessing window
+      if (typeof window === 'undefined') return
+      
       const vw = window.innerWidth
       const vh = window.innerHeight
       const viewportRatio = vw / vh
@@ -102,6 +111,23 @@ export default function SocialsPageFullscreenDynamic() {
     window.addEventListener('resize', calculateLayout)
     return () => window.removeEventListener('resize', calculateLayout)
   }, [])
+
+  // Show loading state during SSR
+  if (!isClient) {
+    return (
+      <div className="relative w-screen h-screen overflow-hidden bg-[#1a0b3c]">
+        <Image
+          src="/Background.gif"
+          alt="Animated background"
+          fill
+          className="object-contain"
+          priority
+          unoptimized
+          sizes="100vw"
+        />
+      </div>
+    )
+  }
 
   return (
     <div className="relative w-screen h-screen overflow-hidden bg-[#1a0b3c]">
