@@ -1,0 +1,63 @@
+{
+  "page": "Socials",
+  "width": 1920,
+  "height": 1080,
+  "background": {
+    "type": "background",
+    "name": "SocialsBackground",
+    "src": "public/Background 2.gif",
+    "width": 1920,
+    "height": 1080,
+    "aspectRatio": "16/9",
+    "x": 0,
+    "y": 0,
+    "ariaLabel": "Animated background"
+  },
+  "components": [
+    {
+      "type": "iconButtonRow",
+      "name": "SocialButtons",
+      "layout": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "alignItems": "center",
+        "gap": 32,
+        "position": "absolute",
+        "top": 223,
+        "width": 1920
+      },
+      "children": [
+        {
+          "type": "iconButton",
+          "name": "Twitter",
+          "icon": "public/Twitter Button.png",
+          "width": 84,
+          "height": 80,
+          "link": "https://x.com/PlaySoulGate",
+          "ariaLabel": "Follow us on Twitter"
+        },
+        {
+          "type": "iconButton",
+          "name": "Discord",
+          "icon": "public/Discord Button.png",
+          "width": 76,
+          "height": 80,
+          "link": "https://discord.gg/yourlink",
+          "ariaLabel": "Join us on Discord"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Logo",
+      "src": "public/Sprite-0001.png",
+      "width": 528,
+      "height": 368,
+      "x": 696,
+      "y": 367,
+      "aspectRatio": "33/23",
+      "ariaLabel": "SoulGate Logo"
+    }
+  ]
+} 

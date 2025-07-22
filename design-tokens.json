@@ -1,0 +1,54 @@
+{
+  "colors": {
+    "background": {
+      "primary": "#1A0B3C",
+      "secondary": "#2D1B69"
+    },
+    "social": {
+      "twitter": "#1DA1F2",
+      "discord": "#5865F2"
+    },
+    "text": {
+      "primary": "#FFFFFF",
+      "secondary": "#E0E0E0"
+    }
+  },
+  "spacing": {
+    "social-buttons-gap": "32px",
+    "social-buttons-gap-mobile": "16px",
+    "logo-margin-top": "144px",
+    "social-buttons-top": "223px"
+  },
+  "dimensions": {
+    "page": {
+      "width": "1920px",
+      "height": "1080px"
+    },
+    "logo": {
+      "width": "528px",
+      "height": "368px"
+    },
+    "social-buttons": {
+      "twitter": {
+        "width": "84px",
+        "height": "80px"
+      },
+      "discord": {
+        "width": "76px",
+        "height": "80px"
+      }
+    }
+  },
+  "fonts": {
+    "primary": "Inter, sans-serif",
+    "size": {
+      "base": "16px"
+    },
+    "weight": {
+      "regular": "400"
+    }
+  },
+  "borderRadius": {
+    "button": "8px"
+  }
+}
