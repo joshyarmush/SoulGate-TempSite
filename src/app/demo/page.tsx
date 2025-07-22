@@ -1,8 +1,8 @@
 'use client'
 
 import { useState } from 'react'
-import SocialsPageLetterbox from '../page-letterbox'
-import SocialsPageFullscreen from '../page-fullscreen'
+import SocialsPageOptionAFixed from '../page-option-a-fixed'
+import SocialsPageFullscreenDynamic from '../page-fullscreen-dynamic'
 
 export default function DemoPage() {
   const [mode, setMode] = useState<'letterbox' | 'fullscreen'>('letterbox')
@@ -47,7 +47,7 @@ export default function DemoPage() {
       </div>
 
       {/* Render selected mode */}
-      {mode === 'letterbox' ? <SocialsPageLetterbox /> : <SocialsPageFullscreen />}
+      {mode === 'letterbox' ? <SocialsPageOptionAFixed /> : <SocialsPageFullscreenDynamic />}
     </div>
   )
 }
