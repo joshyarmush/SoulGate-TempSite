@@ -5,7 +5,7 @@
   "background": {
     "type": "background",
     "name": "SocialsBackground",
-    "src": "public/Background 2.gif",
+    "src": "public/Background.gif",
     "width": 1920,
     "height": 1080,
     "aspectRatio": "16/9",
@@ -43,7 +43,7 @@
           "icon": "public/Discord Button.png",
           "width": 76,
           "height": 80,
-          "link": "https://discord.gg/yourlink",
+          "link": "https://discord.com/invite/soulgate",
           "ariaLabel": "Join us on Discord"
         }
       ]
@@ -51,7 +51,7 @@
     {
       "type": "image",
       "name": "Logo",
-      "src": "public/Sprite-0001.png",
+      "src": "public/Logo.png",
       "width": 528,
       "height": 368,
       "x": 696,
