@@ -1,7 +1,7 @@
 'use client'
 
-import SocialsPageFullscreenDynamic from './page-fullscreen-dynamic'
+import TitlePage from './page-title'
 
-export default function SocialsPage() {
-  return <SocialsPageFullscreenDynamic />
+export default function HomePage() {
+  return <TitlePage />
 }
