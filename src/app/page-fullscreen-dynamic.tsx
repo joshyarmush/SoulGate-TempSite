@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
+import Navigation from './components/Navigation'
 
 export default function SocialsPageFullscreenDynamic() {
   const [isClient, setIsClient] = useState(false)
@@ -131,6 +132,7 @@ export default function SocialsPageFullscreenDynamic() {
 
   return (
     <div className="relative w-screen h-screen overflow-hidden bg-[#1a0b3c]">
+      <Navigation />
       {/* Background - Dynamic fit based on viewport */}
       <Image
         src="/Background.gif"

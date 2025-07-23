@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
+import Navigation from './components/Navigation'
 
 export default function TitlePage() {
   const [isClient, setIsClient] = useState(false)
@@ -130,6 +131,7 @@ export default function TitlePage() {
 
   return (
     <div className="relative w-screen h-screen overflow-hidden bg-[#1a0b3c]">
+      <Navigation />
       {/* Background - Dynamic fit based on viewport */}
       <Image
         src="/title-background.png"
@@ -164,8 +166,14 @@ export default function TitlePage() {
             transformOrigin: 'top left'
           }}
         >
-          {/* Logo - Centered */}
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+          {/* Logo - Exact Figma position */}
+          <div 
+            className="absolute"
+            style={{ 
+              left: '702px',
+              top: '691px'
+            }}
+          >
             <Image
               src="/title-logo.png"
               alt="SoulGate Heroes Logo"

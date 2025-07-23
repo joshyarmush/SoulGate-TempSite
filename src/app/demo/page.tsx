@@ -3,14 +3,16 @@
 import { useState } from 'react'
 import SocialsPageFullscreenDynamic from '../page-fullscreen-dynamic'
 import TitlePage from '../page-title'
+import Navigation from '../components/Navigation'
 
 export default function DemoPage() {
   const [mode, setMode] = useState<'socials' | 'title'>('socials')
 
   return (
     <div className="relative">
+      <Navigation />
       {/* Mode Switcher */}
-      <div className="fixed top-4 left-4 z-50 bg-black/80 backdrop-blur rounded-lg p-2 flex gap-2">
+      <div className="fixed top-4 left-4 z-40 bg-black/80 backdrop-blur rounded-lg p-2 flex gap-2">
         <button
           onClick={() => setMode('socials')}
           className={`px-4 py-2 rounded text-sm font-medium transition-colors ${
